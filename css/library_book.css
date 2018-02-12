@@ -1,0 +1,109 @@
+.container_1_class_parent {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 150px;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+.hijo2 {
+    margin-top: 50px;
+    padding-right: 150px;
+}
+
+.middle-title {
+    margin-top: 50px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+#show_books_id_2 {
+    margin-left: 10%;
+   width: 80%;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    background-color: currentColor;
+}
+
+
+.flip-container {
+    perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    margin: 5px;
+    width: 250px;
+    height: 370px;
+}
+
+/* flip speed goes here */
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    margin: 0px;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+    backface-visibility: hidden;
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+   
+    transform: rotateY(0deg);
+}
+
+
+
+.back {
+    transform: rotateY(180deg);
+    background: black;
+    padding: 10px;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
